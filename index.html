@@ -1,0 +1,148 @@
+<!DOCTYPE>
+<html lang="pl">
+<head>
+	<meta name="charset" content="utf-8"/>
+	<title>TheUnboxall</title>
+	<meta name="description" content="Unboxingi, Ciekawostki i Recenzje różnych przedmiotów..."/>
+	<meta name="keywords" content="Unboxall,otwieranie paczek,rozrywka,śmieszne, youtube"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/jpg" href="images/favicon.jpg"/>
+	<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+</head>
+<body>
+
+	<div class="all">
+	
+		<div class="logo"><a href="theunboxall.html">
+		<image src="images/pudlo_logo.jpg" width="100%" height="100%"></image></a></div>
+		
+		<div class="nav_top">
+			<ol>
+				<li><a href="theunboxall.html">Strona główna</a></li>
+				<li><a href="#">The Unboxall</a>
+				<ul>
+							<li><a href="#">Youtube</a></li>
+							<li><a href="#">Facebook</a></li>
+				</li>
+				</ul>
+				<li><a href="#">Fan arts</a>
+					<ul>
+							<li><a href="#">Memy</a></li>
+							<li><a href="#">Rękodzieło</a></li>
+							<li><a href="#">Malowidła</a></li>
+							<li><a href="#">Opowiadania</a></li>
+							<li><a href="#">Bejca</a></li>
+							<li><a href="#">Koty</a></li>
+							<li><a href="#">Filmy</a></li>
+							<li><a href="#">Ordery</a></li>
+						</ul>
+				</li>
+				<li><a href="#">Socials</a>
+					<ul>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Youtube</a></li>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+				</li>
+				<li><a href="#">O autorach</a></li>
+			</ol>
+		</div>
+		
+		<div class="navL">
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>Propozycje odcinków wraz z ciekawostkami</b></a></div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>Fan art - kategorie</b></a></div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis">tekst_opis</div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis">tekst_opis</div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis">tekst_opis</div>
+		</div>
+		
+		<div class="content">
+		<p><h2>Kim jest Unbox?</h2>
+		</p>
+		
+		<p>To pytanie zadaje sobie dzisiaj niejedna osoba, jednak nikt tak na prawdę nie wie kim on jest, co robi prywatnie w życiu, jego anonimowość, tworzy ten wyjątkowy i niepowtarzalny klimat kanału <a href="https://www.youtube.com/user/TheUnboxall/featured" target="_blank" style="text-decoration:none;" style="color:red;" title=" Link do kanału TheUnboxall">TheUnboxall.</a>
+		</p>
+		
+		<p>Nikt lepiej nie opowie o tym, czym jest ten twór lepiej niż sam autor.
+		</p>
+		
+		<p><iframe style="margin-left:10%" width="80%" height="45%" src="https://www.youtube.com/embed/MtJwwaK4Ros" frameborder="0" allowfullscreen></iframe>
+		</p>
+		</div>
+		
+		<div class="navR">
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>Dodaj kontent</b></a></div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>Rejestracja/</br>logowanie</b></a></div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>Kontakt</b></a></div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>Regulamin</b></a></div>
+			<div class="rectangle">obrazek
+			</div>
+			<div class="tekst_opis"><a href="#"><b>O Projekcie</b></a></div>
+		</div>
+		
+		
+		
+	</div>
+	
+	<div class="footer"> <a href="https://www.youtube.com/user/TheUnboxall" target="_blank" title="Kanał na youtube użytkownikia Theunboxall">TheUnboxall</a> & <a href="https://www.facebook.com/mirek.nawrot" target="_blank" title="Profil na Facebook'u">Mirek Nawrot</a> 2015 &copy; Wszelkie prawa zastrzeżone 
+		</div>
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+			var navY = $('.nav_top').offset().top;
+			
+			var stickyNav = function(){
+				var scrollY = $(window).scrollTop();
+				
+				if(scrollY > navY)
+				{
+					$('.nav_top').addClass('sticky');
+					$('.content').css('padding-top', '3%');
+					$('.navR').css('padding-top', '50px');
+					$('.navL').css('padding-top', '50px');
+					$('ol>li').css('padding-bottom', '1%');
+					$('ol >li >ul >li').css('padding-bottom', '0');
+				}
+				else
+				{
+					$('.nav_top').removeClass('sticky');
+					$('.content').css('padding-top', '3%');
+					$('.navR').css('padding-top', '0');
+					$('.navL').css('padding-top', '0');
+					$('ol>li').css('padding-bottom', '0');
+					$('ol >li >ul >li').css('padding-bottom', '0');
+				}
+			};
+			
+			stickyNav();
+			
+			$(window).scroll(function(){
+				stickyNav();
+			});
+		});
+	</script>
+</body>
+</html>
