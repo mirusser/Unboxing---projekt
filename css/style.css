@@ -8,6 +8,7 @@ body
 	background-size:100%;
 	color:black;
 	margin-bottom:2%;
+	font-family: 'Lato', sans-serif;
 }
 .all
 {
@@ -62,16 +63,17 @@ ol>li
 	width:14%;
 	height:5%;
 	padding-top:1%;
+	border-right: 2px solid #751b1b;
 }
 ol > li:first-child
 {
+	border-left: 2px solid #751b1b;
 	margin-left:15%;
 }
 ol > li:hover
 {
 	background-color:#a4a4a4;
 	cursor:pointer;
-	border-right:2px solid #a4a4a4;
 	transition-duration:1s;
 }
 ol > li:hover > a
