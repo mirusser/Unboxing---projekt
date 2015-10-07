@@ -1,84 +1,62 @@
 body
 {
-	background-color:#ffffff;
-	background-image:url("../images/panele.jpg");
-	background-position:top right;
-	background-attachment:fixed;
-	background-repeat:repeat-y;
-	background-size:100%;
-	color:black;
-	margin-bottom:2%;
+	background: url("../images/panele.jpg");
+	color: black;
+	margin-bottom: 2%;
 	font-family: 'Lato', sans-serif;
 }
-.all
-{
-	width:100%;
-	background-color:none;
-}
+
 .logo
 {
-	width:70%;
-	min-height:5%;
-	background-color:#e0e0e0;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
-	margin-bottom:2%;
-	margin-top:1%;
-	height:40%;
+	width: 70%;
+	min-height: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	margin-top: 1%;
+	height: 40%;
 }
 #nav_top
 {
-	width:100%;
-	background-color:#e0e0e0;
-	padding:1% 0;
-	padding-bottom:1%;
-	text-align:center;
+	text-align: center;
 	border-top: 1px solid #751b1b;
 	border-bottom: 1px solid #751b1b;
-	color:black;
 }
 ol
 {
-	width:100%;
-	padding:0;
-	margin:0;
-	list-style-type:none;
-	display:inline-block;
-	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 ol a
 {
-	text-align:center;
-	color:black;
-	text-decoration:none;
-	display:block;
+	color: black;
+	text-decoration: none;
+	display: block;
 }
-ol>li
+ol > li
 {
-	background-color:#bbbbbb;
-	float:left;
-	width:14%;
-	height:5%;
-	padding-top:1%;
+	background-color: #bbbbbb;
+	float: left;
+	width: 14%;
+	height: 5%;
+	padding-top: 1%;
 	border-right: 2px solid #751b1b;
 }
 ol > li:first-child
 {
 	border-left: 2px solid #751b1b;
-	margin-left:15%;
+	margin-left: 15%;
 }
 ol > li:hover
 {
-	background-color:#a4a4a4;
-	cursor:pointer;
-	transition-duration:1s;
-}
-ol > li:hover > a
-{
-	color:black;
+	background-color: #a4a4a4;
+	transition-duration: 1s;
 }
 ol > li > ul
 {
@@ -92,22 +70,19 @@ ol > li > ul
 	z-index: 10;
 	
 	opacity: 0;
-	transition-property: opacity;
-	transition-duration: 0.5s;
+	transition: opacity 0.5s;
 }
 ol > li:hover > ul
 {
 	opacity: 1;
-	transition-property: opacity;
-	transition-duration: 0.5s;
+	transition-property: opacity 0.5s;
 }
-ol >li >ul >li
+ol > li > ul > li
 {
 	background-color:#a4a4a4;
 	position:relative;
-	z-index:100;
 	border-top: 1px dashed #751b1b;
-	transition-duration:1s;
+	transition-duration: 1s;
 }
 ol >li >ul >li:hover
 {
