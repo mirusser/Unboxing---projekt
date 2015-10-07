@@ -27,7 +27,7 @@ body
 	margin-top:1%;
 	height:40%;
 }
-.nav_top
+#nav_top
 {
 	width:100%;
 	background-color:#e0e0e0;
@@ -89,19 +89,17 @@ ol > li > ul
 	position:absolute;
 	text-align:center;
 	width:14%;
-	display:none;
+	z-index: 10;
 	
 	opacity: 0;
 	transition-property: opacity;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 }
 ol > li:hover > ul
 {
-	display:block;
-	
 	opacity: 1;
 	transition-property: opacity;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 }
 ol >li >ul >li
 {
