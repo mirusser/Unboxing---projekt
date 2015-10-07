@@ -16,8 +16,10 @@ body
 	margin-top: 1%;
 	height: 40%;
 }
-#nav_top
+#top
 {
+	background-color: #e0e0e0;
+	padding: 1% 0;
 	text-align: center;
 	border-top: 1px solid #751b1b;
 	border-bottom: 1px solid #751b1b;
