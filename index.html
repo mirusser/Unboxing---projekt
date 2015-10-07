@@ -113,14 +113,14 @@
 	
 	<script>
 	$(document).ready(function(){
-			var navY = $('.nav_top').offset().top;
+			var navY = $('#top').offset().top;
 			
 			var stickyNav = function(){
 				var scrollY = $(window).scrollTop();
 				
 				if(scrollY > navY)
 				{
-					$('.nav_top').addClass('sticky');
+					$('#top').addClass('sticky');
 					$('.content').css('padding-top', '3%');
 					$('.navR').css('padding-top', '50px');
 					$('.navL').css('padding-top', '50px');
@@ -129,7 +129,7 @@
 				}
 				else
 				{
-					$('.nav_top').removeClass('sticky');
+					$('#top').removeClass('sticky');
 					$('.content').css('padding-top', '3%');
 					$('.navR').css('padding-top', '0');
 					$('.navL').css('padding-top', '0');
