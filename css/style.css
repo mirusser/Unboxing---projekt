@@ -81,33 +81,29 @@ ol > li:hover > ul
 }
 ol > li > ul > li
 {
-	background-color:#a4a4a4;
-	position:relative;
+	background-color: #a4a4a4;
 	border-top: 1px dashed #751b1b;
 	transition-duration: 1s;
 }
-ol >li >ul >li:hover
+ol > li > ul > li:hover
 {
-	background-color:#c34f4f;
+	background-color: #c34f4f;
 }
-ol >li >ul >li:hover >a
-{
-	color:#451717;
-}
+
 .sticky
 {
-	width:100%;
-	position:fixed;
-	left:0;
-	top:0;
-	z-index:100;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top :0;
+	z-index: 100;
 }
 .navL
 {
-	float:left;
-	width:15%;
-	background-color:none;
-	margin-top:3%;
+	float: left;
+	width: 15%;
+	background-color: none;
+	margin-top: 3%;
 
 }
 .rectangle
